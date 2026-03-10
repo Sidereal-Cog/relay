@@ -7,7 +7,7 @@
   IgnorableNamespaces="uap mp rescap">
 
   <Identity
-    Name="SiderealCog.NotificationSoundRouter"
+    Name="SiderealCog.Relay"
     Publisher="CN=SiderealCog"
     Version="1.0.0.0"
     ProcessorArchitecture="x64" />
@@ -17,7 +17,7 @@
     PhonePublisherId="00000000-0000-0000-0000-000000000000" />
 
   <Properties>
-    <DisplayName>Notification Sound Router</DisplayName>
+    <DisplayName>Relay</DisplayName>
     <PublisherDisplayName>Sidereal Cog</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -36,11 +36,11 @@
   <Applications>
     <Application
       Id="App"
-      Executable="NotificationSoundRouter.exe"
+      Executable="Relay.exe"
       EntryPoint="Windows.FullTrustApplication">
 
       <uap:VisualElements
-        DisplayName="Notification Sound Router"
+        DisplayName="Relay"
         Description="Per-app notification sound control for Windows 11"
         BackgroundColor="transparent"
         Square150x150Logo="Assets\Square150x150Logo.png"
@@ -51,9 +51,9 @@
       <Extensions>
         <uap:Extension Category="windows.startupTask">
           <uap:StartupTask
-            TaskId="NotificationSoundRouterStartup"
+            TaskId="RelayStartup"
             Enabled="true"
-            DisplayName="Notification Sound Router" />
+            DisplayName="Relay" />
         </uap:Extension>
       </Extensions>
 

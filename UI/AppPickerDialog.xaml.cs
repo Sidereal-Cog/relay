@@ -1,8 +1,8 @@
 using System.Windows;
 using System.Windows.Input;
-using NotificationSoundRouter.Models;
+using Relay.Models;
 
-namespace NotificationSoundRouter.UI;
+namespace Relay.UI;
 
 public partial class AppPickerDialog : Window
 {

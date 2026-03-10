@@ -1,15 +1,15 @@
 using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using NotificationSoundRouter.Models;
+using Relay.Models;
 
-namespace NotificationSoundRouter;
+namespace Relay;
 
 public static class ConfigManager
 {
     private static readonly string ConfigDir =
         Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
-                     "NotificationSoundRouter");
+                     "Relay");
 
     private static readonly string ConfigPath =
         Path.Combine(ConfigDir, "config.json");

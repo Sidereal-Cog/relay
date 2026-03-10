@@ -1,4 +1,4 @@
-namespace NotificationSoundRouter.Models;
+namespace Relay.Models;
 
 public enum MatchField { Title, Body }
 public enum MatchType  { Contains, StartsWith, EndsWith, Equals }

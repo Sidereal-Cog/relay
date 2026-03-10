@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("NotificationSoundRouter")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Relay")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("NotificationSoundRouter")]
-[assembly: System.Reflection.AssemblyTitleAttribute("NotificationSoundRouter")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b3b815ff80618035c4c7c9f1a48e894a3976a42")]
+[assembly: System.Reflection.AssemblyProductAttribute("Relay")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Relay")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows10.0.19041.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows10.0.19041.0")]

@@ -1,6 +1,6 @@
 using Microsoft.Win32;
 
-namespace NotificationSoundRouter;
+namespace Relay;
 
 public static class SoundSchemeManager
 {

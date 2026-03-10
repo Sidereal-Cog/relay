@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bcruc\\Documents\\Development\\Sidereal Cog\\NotificationSoundRouter\\NotificationSoundRouter.csproj": {}
+    "C:\\Users\\bcruc\\Documents\\Development\\Sidereal Cog\\NotificationSoundRouter\\Relay.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bcruc\\Documents\\Development\\Sidereal Cog\\NotificationSoundRouter\\NotificationSoundRouter.csproj": {
+    "C:\\Users\\bcruc\\Documents\\Development\\Sidereal Cog\\NotificationSoundRouter\\Relay.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bcruc\\Documents\\Development\\Sidereal Cog\\NotificationSoundRouter\\NotificationSoundRouter.csproj",
+        "projectUniqueName": "C:\\Users\\bcruc\\Documents\\Development\\Sidereal Cog\\NotificationSoundRouter\\Relay.csproj",
         "projectName": "Relay",
-        "projectPath": "C:\\Users\\bcruc\\Documents\\Development\\Sidereal Cog\\NotificationSoundRouter\\NotificationSoundRouter.csproj",
+        "projectPath": "C:\\Users\\bcruc\\Documents\\Development\\Sidereal Cog\\NotificationSoundRouter\\Relay.csproj",
         "packagesPath": "C:\\Users\\bcruc\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\bcruc\\Documents\\Development\\Sidereal Cog\\NotificationSoundRouter\\obj\\",
         "projectStyle": "PackageReference",
