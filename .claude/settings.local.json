@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dotnet build:*)",
+      "Bash(dotnet clean:*)",
+      "Bash(dotnet publish:*)",
+      "Bash(dotnet restore:*)",
+      "Bash(powershell -Command \"Add-AppxPackage*)",
+      "Bash(powershell -Command \"Get-AppxPackage*)",
+      "Bash(powershell -Command \"Remove-AppxPackage*)"
+    ]
+  }
+}
