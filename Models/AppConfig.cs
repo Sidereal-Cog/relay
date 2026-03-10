@@ -1,6 +1,6 @@
 using System.Collections.ObjectModel;
 
-namespace NotificationSoundRouter.Models;
+namespace Relay.Models;
 
 public sealed class AppConfig
 {

@@ -3,8 +3,8 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
-    <RootNamespace>NotificationSoundRouter</RootNamespace>
-    <AssemblyName>NotificationSoundRouter</AssemblyName>
+    <RootNamespace>Relay</RootNamespace>
+    <AssemblyName>Relay</AssemblyName>
     <UseWPF>true</UseWPF>
     <UseWindowsForms>true</UseWindowsForms>
     <Nullable>enable</Nullable>

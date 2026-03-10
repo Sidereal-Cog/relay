@@ -2,7 +2,7 @@ using System.Runtime.InteropServices;
 using Windows.UI.Notifications;
 using Windows.UI.Notifications.Management;
 
-namespace NotificationSoundRouter;
+namespace Relay;
 
 public sealed class NotificationListener : IDisposable
 {

@@ -1,5 +1,5 @@
 using System.Windows.Forms;
-using NotificationSoundRouter;
+using Relay;
 
 // WinForms, WPF, and WinRT COM all require a single-threaded apartment.
 // Do not convert Main to async Task — it breaks STA and causes silent WinRT failures.

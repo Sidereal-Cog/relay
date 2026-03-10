@@ -1,8 +1,8 @@
-# Notification Sound Router
+# Relay
 
 A Windows 11 system tray utility that gives you per-app control over notification sounds.
 
-Windows plays the same generic sound for every app. Notification Sound Router intercepts toast notifications invisibly and plays whatever `.wav` file you assign to each app — with optional content-match rules so a direct message sounds different from a channel mention.
+Windows plays the same generic sound for every app. Relay intercepts toast notifications invisibly and plays whatever `.wav` file you assign to each app — with optional content-match rules so a direct message sounds different from a channel mention.
 
 ---
 
@@ -46,7 +46,7 @@ Run as the **current user** (not admin). This is required — without package id
 To unregister:
 
 ```powershell
-Get-AppxPackage *NotificationSoundRouter* | Remove-AppxPackage
+Get-AppxPackage *SiderealCog.Relay* | Remove-AppxPackage
 ```
 
 ---
@@ -54,34 +54,34 @@ Get-AppxPackage *NotificationSoundRouter* | Remove-AppxPackage
 ## Project Structure
 
 ```
-NotificationSoundRouter/
-├── NotificationSoundRouter.csproj   # net8.0-windows10.0.19041.0, WPF+WinForms, MSIX
-├── Package.appxmanifest             # userNotificationListener restricted capability
-├── Program.cs                       # [STAThread] entry point
-├── TrayApp.cs                       # NotifyIcon + WPF Application lifecycle
-├── NotificationListener.cs          # WinRT UserNotificationListener wrapper
-├── SoundRouter.cs                   # Rule matching + SoundPlayer
-├── SoundSchemeManager.cs            # Registry silence/restore
-├── ConfigManager.cs                 # JSON config read/write (%AppData%\NotificationSoundRouter\)
+NotificationSoundRouter/          ← repo/solution folder (named for C# namespace)
+├── NotificationSoundRouter.csproj
+├── Package.appxmanifest          # MSIX identity: SiderealCog.Relay
+├── Program.cs
+├── TrayApp.cs
+├── NotificationListener.cs
+├── SoundRouter.cs
+├── SoundSchemeManager.cs
+├── ConfigManager.cs              # Config stored at %AppData%\Relay\config.json
 ├── Models/
 │   ├── RootConfig.cs
 │   ├── AppConfig.cs
 │   └── SoundRule.cs
 ├── UI/
-│   ├── BrandStyles.xaml             # Sidereal Cog brand ResourceDictionary
-│   ├── SettingsWindow.xaml/.cs      # Main settings window
-│   └── AppPickerDialog.xaml/.cs     # "Add app" picker dialog
+│   ├── BrandStyles.xaml          # Sidereal Cog brand ResourceDictionary
+│   ├── SettingsWindow.xaml/.cs
+│   └── AppPickerDialog.xaml/.cs
 ├── Resources/
-│   ├── tray.ico                     # Tray icon (replace placeholder with real ICO)
-│   └── silence.wav                  # Bundled silent WAV (not currently used in routing)
-└── Assets/                          # MSIX package logos (replace placeholders)
+│   ├── tray.ico                  # Tray icon (replace placeholder with real ICO)
+│   └── silence.wav
+└── Assets/                       # MSIX package logos (replace placeholders)
 ```
 
 ---
 
 ## Config File
 
-Location: `%AppData%\NotificationSoundRouter\config.json`
+Location: `%AppData%\Relay\config.json`
 
 ```json
 {
@@ -118,7 +118,7 @@ Rules are evaluated top-to-bottom; first match wins. `matchType` values: `contai
 
 ## Known Limitations
 
-Some apps (Discord, Slack desktop, Spotify, Teams) route audio through their **own internal engine**, bypassing the Windows toast sound system entirely. Notification Sound Router will still fire for these apps (the visual toast is intercepted), but the app may also play its own sound simultaneously. Disable in-app notification sounds for those apps to avoid doubling up.
+Some apps (Discord, Slack desktop, Spotify, Teams) route audio through their **own internal engine**, bypassing the Windows toast sound system entirely. Relay will still fire for these apps (the visual toast is intercepted), but the app may also play its own sound simultaneously. Disable in-app notification sounds for those apps to avoid doubling up.
 
 ---
 

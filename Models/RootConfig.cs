@@ -1,4 +1,4 @@
-namespace NotificationSoundRouter.Models;
+namespace Relay.Models;
 
 public sealed class RootConfig
 {

@@ -1,7 +1,7 @@
 using System.Windows.Forms;
-using NotificationSoundRouter.UI;
+using Relay.UI;
 
-namespace NotificationSoundRouter;
+namespace Relay;
 
 public sealed class TrayApp : ApplicationContext
 {
@@ -27,7 +27,7 @@ public sealed class TrayApp : ApplicationContext
         _notifyIcon = new NotifyIcon
         {
             Icon             = new System.Drawing.Icon("Resources\\tray.ico"),
-            Text             = "Notification Sound Router",
+            Text             = "Relay",
             Visible          = true,
             ContextMenuStrip = menu
         };

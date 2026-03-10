@@ -1,9 +1,9 @@
 using System.IO;
 using System.Media;
-using NotificationSoundRouter.Models;
-using MatchType = NotificationSoundRouter.Models.MatchType;
+using Relay.Models;
+using MatchType = Relay.Models.MatchType;
 
-namespace NotificationSoundRouter;
+namespace Relay;
 
 public static class SoundRouter
 {
